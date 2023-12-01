@@ -120,11 +120,7 @@ document.addEventListener('mouseup', function () {
         document.getElementById('opcoes').addEventListener('change', function () {
             const modelofimage = document.getElementById('modelofdevice');
             const selectedValue = this.value;
-            const modelofbackground = document.getElementById('modelofbackground');
-            modelofbackground.innerHTML = '';
-
             modelofimage.innerHTML = '';
-            
             const imagemUrl = `iphone/${selectedValue}/device.png`;
             modelofimage.src = imagemUrl;
             modelofimage.alt = `Imagem do iPhone ${selectedValue}`;
